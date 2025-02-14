@@ -1,0 +1,15 @@
+{
+    "credentials": "sqlemi",
+    "dbDescription": null,
+    "dbDriver": "com.mysql.cj.jdbc.Driver",
+    "dbMaxRows": 100,
+    "dbType": "MySQL",
+    "dbUrl": "jdbc:mysql://emi:3306/uc?allowMultiQueries=true",
+    "exportReleaseLevel": "7.6.3.2",
+    "exportTable": "ops_database_connection",
+    "name": "sqlconnworld",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "sysId": "3f8065707ad842c4a83fce0e2e941c7e",
+    "version": 8
+}

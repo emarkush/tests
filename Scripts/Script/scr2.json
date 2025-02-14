@@ -1,0 +1,14 @@
+{
+    "content": "echo \"${_resultsAllFromTask('test1sql')}\" > outputfrom1.txt",
+    "description": null,
+    "exportReleaseLevel": "7.6.3.2",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [],
+    "resolveVariables": true,
+    "retainSysIds": true,
+    "scriptName": "scr2",
+    "scriptType": "Script",
+    "sysId": "3b7b445ec68449918b209a30ee0c3561",
+    "version": 6
+}
