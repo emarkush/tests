@@ -37,8 +37,8 @@
         "systemOperations": []
     },
     "autoCleanup": false,
-    "avgRunTime": 13,
-    "avgRunTimeDisplay": "13 Seconds",
+    "avgRunTime": 11,
+    "avgRunTimeDisplay": "11 Seconds",
     "columnName": null,
     "columnOp": "=",
     "columnValue": null,
@@ -75,9 +75,9 @@
     "exportTable": "ops_task_sql",
     "firstRun": "2025-01-21 05:35:47 -0500",
     "holdResources": false,
-    "lastRun": "2025-02-19 04:23:27 -0500",
-    "lastRunTime": 0,
-    "lastRunTimeDisplay": "0 Seconds",
+    "lastRun": "2025-05-08 07:41:13 -0400",
+    "lastRunTime": 4,
+    "lastRunTimeDisplay": "4 Seconds",
     "lfDayConstraint": "None",
     "lfDuration": "00:00:00:00",
     "lfEnabled": false,
@@ -119,10 +119,10 @@
     "retryInterval": 60,
     "retryMaximum": 0,
     "retrySuppressFailure": false,
-    "runCount": 45,
-    "runTime": 592,
+    "runCount": 53,
+    "runTime": 604,
     "simulation": false,
-    "sqlCommand": "SELECT sys_class_name,memory_used from ops_exec where SYS_CLASS_NAME like '%SL%'",
+    "sqlCommand": "SELECT ops_history.`exec_id`, TA_EXEC.`name`, COUNT(0) AS COUNT0, SUM(ops_history.`task_ref_count`) FROM (ops_history LEFT JOIN ops_exec AS TA_EXEC ON ops_history.`exec_id` = TA_EXEC.`sys_id`) GROUP BY ops_history.`exec_id`, TA_EXEC.`name` ORDER BY TA_EXEC.`name`",
     "startHeld": false,
     "startHeldReason": null,
     "summary": null,
@@ -158,6 +158,6 @@
             "value": "8"
         }
     ],
-    "version": 34,
+    "version": 36,
     "virtualResources": []
 }
