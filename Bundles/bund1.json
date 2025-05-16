@@ -42,11 +42,6 @@
         },
         {
             "addedBy": "ops.admin",
-            "name": "out5",
-            "sysId": "650c04445c8042d38e0f69eba1fba5b4"
-        },
-        {
-            "addedBy": "ops.admin",
             "name": "out1",
             "sysId": "ba9e50dd7e48434ba26a2eebff720dbe"
         }
