@@ -44,6 +44,11 @@
             "addedBy": "ops.admin",
             "name": "out1",
             "sysId": "ba9e50dd7e48434ba26a2eebff720dbe"
+        },
+        {
+            "addedBy": "ops.admin",
+            "name": "outputcity1",
+            "sysId": "27cd2415ca5344c1a63066e2f7d9a5cb"
         }
     ],
     "bundleVirtualResources": [],
