@@ -1,0 +1,57 @@
+{
+    "retainSysIds": true,
+    "name": "bund1",
+    "sysId": "a72e53f726a647279db34ea40db1866b",
+    "description": null,
+    "opswiseGroups": [],
+    "defaultPromotionTarget": null,
+    "excludeOnExistence": null,
+    "followReferences": false,
+    "promoteBundleDefinition": false,
+    "promoteByBusinessServices": [],
+    "visibleTo": null,
+    "bundleAgentClusters": [],
+    "bundleApplications": [],
+    "bundleBusinessServices": [],
+    "bundleCalendars": [],
+    "bundleCredentials": [],
+    "bundleCustomDays": [],
+    "bundleDatabaseConnections": [],
+    "bundleEmailConnections": [],
+    "bundleEmailTemplates": [],
+    "bundleOAuthClients": [],
+    "bundlePeoplesoftConnections": [],
+    "bundleReports": [],
+    "bundleSapConnections": [],
+    "bundleScripts": [],
+    "bundleSnmpManagers": [],
+    "bundleTasks": [],
+    "bundleTriggers": [],
+    "bundleUniversalEventTemplates": [],
+    "bundleUniversalTemplates": [],
+    "bundleVariables": [
+        {
+            "addedBy": "ops.admin",
+            "name": "out2",
+            "sysId": "e4d22f5493ed4d0bad06a8c57d8abaa8"
+        },
+        {
+            "addedBy": "ops.admin",
+            "name": "len5",
+            "sysId": "cdb8a16f878a4544af089295ee2a154b"
+        },
+        {
+            "addedBy": "ops.admin",
+            "name": "out5",
+            "sysId": "650c04445c8042d38e0f69eba1fba5b4"
+        },
+        {
+            "addedBy": "ops.admin",
+            "name": "out1",
+            "sysId": "ba9e50dd7e48434ba26a2eebff720dbe"
+        }
+    ],
+    "bundleVirtualResources": [],
+    "exportReleaseLevel": "7.6.3.2",
+    "exportTable": "ops_bundle"
+}

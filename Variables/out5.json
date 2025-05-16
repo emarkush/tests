@@ -1,0 +1,11 @@
+{
+    "description": null,
+    "exportReleaseLevel": "7.6.3.2",
+    "exportTable": "ops_variable",
+    "name": "out5",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "sysId": "3f9ad00a91f94de2bbd119230d645e34",
+    "value": "42;2;200",
+    "version": 2
+}
