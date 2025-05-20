@@ -30,8 +30,8 @@
     "avgRunTimeDisplay": "0 Seconds",
     "broadcastCluster": null,
     "broadcastClusterVar": null,
-    "command": "echo hi > test99.txt",
-    "commandOrScript": "Command",
+    "command": null,
+    "commandOrScript": "Script",
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
     "credentials": null,
@@ -122,7 +122,7 @@
     "runCount": 34,
     "runTime": 9,
     "runtimeDir": null,
-    "script": null,
+    "script": "py1",
     "simulation": false,
     "startHeld": false,
     "startHeldReason": null,
@@ -140,7 +140,7 @@
     "twWorkflowOnly": "-- System Default --",
     "userEstimatedDuration": null,
     "variables": [],
-    "version": 26,
+    "version": 27,
     "virtualResources": [],
     "waitForOutput": true
 }

@@ -6,7 +6,7 @@
     "opswiseGroups": [],
     "defaultPromotionTarget": null,
     "excludeOnExistence": null,
-    "followReferences": false,
+    "followReferences": true,
     "promoteBundleDefinition": false,
     "promoteByBusinessServices": [],
     "visibleTo": null,
@@ -25,7 +25,14 @@
     "bundleSapConnections": [],
     "bundleScripts": [],
     "bundleSnmpManagers": [],
-    "bundleTasks": [],
+    "bundleTasks": [
+        {
+            "addedBy": "ops.admin",
+            "name": "echo",
+            "sysId": "47b43166d1f648268edfb1ed4b9b1221",
+            "type": "Linux/Unix"
+        }
+    ],
     "bundleTriggers": [],
     "bundleUniversalEventTemplates": [],
     "bundleUniversalTemplates": [],
