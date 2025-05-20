@@ -1,0 +1,9 @@
+description: null
+exportReleaseLevel: 7.6.3.2
+exportTable: ops_variable
+name: len5
+opswiseGroups: []
+retainSysIds: true
+sysId: 8e76f9c0e736489483ba05673ea540d2
+value: '6'
+version: 2

@@ -1,0 +1,50 @@
+bundleAgentClusters: []
+bundleApplications: []
+bundleBusinessServices: []
+bundleCalendars: []
+bundleCredentials: []
+bundleCustomDays: []
+bundleDatabaseConnections: []
+bundleEmailConnections: []
+bundleEmailTemplates: []
+bundleOAuthClients: []
+bundlePeoplesoftConnections: []
+bundleReports: []
+bundleSapConnections: []
+bundleScripts: []
+bundleSnmpManagers: []
+bundleTasks:
+- addedBy: ops.admin
+  name: echo
+  sysId: 47b43166d1f648268edfb1ed4b9b1221
+  type: Linux/Unix
+bundleTriggers: []
+bundleUniversalEventTemplates: []
+bundleUniversalTemplates: []
+bundleVariables:
+- addedBy: ops.admin
+  name: out2
+  sysId: e4d22f5493ed4d0bad06a8c57d8abaa8
+- addedBy: ops.admin
+  name: len5
+  sysId: cdb8a16f878a4544af089295ee2a154b
+- addedBy: ops.admin
+  name: out1
+  sysId: ba9e50dd7e48434ba26a2eebff720dbe
+- addedBy: ops.admin
+  name: outputcity1
+  sysId: 27cd2415ca5344c1a63066e2f7d9a5cb
+bundleVirtualResources: []
+defaultPromotionTarget: null
+description: null
+excludeOnExistence: null
+exportReleaseLevel: 7.6.3.2
+exportTable: ops_bundle
+followReferences: true
+name: bund1
+opswiseGroups: []
+promoteBundleDefinition: false
+promoteByBusinessServices: []
+retainSysIds: true
+sysId: a72e53f726a647279db34ea40db1866b
+visibleTo: null
