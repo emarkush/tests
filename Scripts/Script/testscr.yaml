@@ -1,5 +1,5 @@
-content: "#!/bin/python3\n\nimport json\n# JSON data as a string (the file you passed)\n\
-  energy_data = ${energy_data_json}\n\n# Parse JSON data\ndata = json.loads(energy_data)\n\
+content: "#!/usr/bin/python3\n\nimport json\n# JSON data as a string (the file you\
+  \ passed)\nenergy_data = ${energy_data_json}\n\n# Parse JSON data\ndata = json.loads(energy_data)\n\
   if \"forecast\" not in data or not data[\"forecast\"]: \nprint(\"Error: No energy\
   \ data available.\")\n exit(1)\n\n# Initialize variables\nlowest_intensity_allday\
   \ = float(\"inf\")\nbest_time_allday = None\nlowest_intensity_protected = float(\"\
@@ -35,4 +35,4 @@ retainSysIds: true
 scriptName: testscr
 scriptType: Script
 sysId: fded8226ff2f42f9a19585eb8e42e091
-version: 1
+version: 2
