@@ -1,0 +1,19 @@
+content: "#!/bin/python3\n\nimport json\n# JSON data as a string (the file you passed)\n\
+  energy_data = ${energy_data_json}\n\n#Parse JSON data\ndata=json.loads(energy_data)\n\
+  if \"forecast\" not in data or not data [\"Forecast']:\nprint(\"Error:No energy\
+  \ data available.\")\nexit(1)\n\n#Initialize variables\nlowest_intensiti_allday=float(\"\
+  inf\")\nbest_time_allday=None\nlowest_intensity_protected =float(\"inf\")\nbest_time_protected=None\n\
+  \n#Process the energy data\n\nfor entry in data[\"forecast\"]:\n try:\n  dt= entry[\"\
+  datatime\"]\n  intensity = entry[\"carbonIntensity\"]\n  #Consider the protected\
+  \ period (18:00 to 0:00)"
+description: null
+exportReleaseLevel: 7.6.3.2
+exportTable: ops_script
+notes: []
+opswiseGroups: []
+resolveVariables: false
+retainSysIds: true
+scriptName: writtensrc
+scriptType: Script
+sysId: 192fc0e0906e449f995b667eacd62710
+version: 1
