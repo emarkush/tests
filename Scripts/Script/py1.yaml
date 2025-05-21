@@ -1,50 +1,11 @@
-content: '#!/usr/bin/python3
-
-
-  import json
-
-
-  a=15
-
-  b=2
-
-  c=a+b
-
-
-  print(f"c")
-
-
-
-  #test test test
-
-
-  if "a" not in data or not data["forecast"]:
-
-  print ("Error")
-
-  if "a" not in data or not data["forecast"]:
-
-  print ("Error")
-
-  if "a" not in data or not data["forecast"]:
-
-  print ("Error")
-
-  if "a" not in data or not data["forecast"]:
-
-  print ("Error")
-
-  if "a" not in data or not data["forecast"]:
-
-  print ("Error")
-
-  if "a" not in data or not data["forecast"]:
-
-  print ("Error")
-
-  if "a" not in data or not data["forecast"]:
-
-  print ("Error")'
+content: "#!/usr/bin/python3\n\nimport json\n\na=15\nb=2\nc=a+b\n\nprint(f\"c\")\n\
+  \n\n#test test test\n\nif \"a\" not in data or not data[\"forecast\"]:\n\n print\
+  \ (\"Error\")\nif \"a\" not in data or not data[\"forecast\"]:\n  print (\"Error\"\
+  )\nif \"a\" not in data or not data[\"forecast\"]:\n   print (\"Error\")\nif \"\
+  a\" not in data or not data[\"forecast\"]:\n    print (\"Error\")\nif \"a\" not\
+  \ in data or not data[\"forecast\"]:\n print (\"Error\")\nif \"a\" not in data or\
+  \ not data[\"forecast\"]:\n print (\"Error\")\nif \"a\" not in data or not data[\"\
+  forecast\"]:\n print (\"Error\")"
 description: null
 exportReleaseLevel: 7.6.3.2
 exportTable: ops_script
@@ -55,4 +16,4 @@ retainSysIds: true
 scriptName: py1
 scriptType: Script
 sysId: 799e60e7e86f4006a48d0da30c9eded5
-version: 6
+version: 7
