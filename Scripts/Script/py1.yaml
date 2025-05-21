@@ -8,7 +8,7 @@ content: '#!/usr/bin/python3
   c=a+b
 
 
-  print(c)'
+  print(f"c")'
 description: null
 exportReleaseLevel: 7.6.3.2
 exportTable: ops_script
@@ -19,4 +19,4 @@ retainSysIds: true
 scriptName: py1
 scriptType: Script
 sysId: 799e60e7e86f4006a48d0da30c9eded5
-version: 1
+version: 2
