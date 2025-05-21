@@ -1,11 +1,14 @@
-content: "#!/usr/bin/python3\n\nimport json\n\na=15\nb=2\nc=a+b\n\nprint(f\"c\")\n\
-  \n\n#test test test\n\nif \"a\" not in data or not data[\"forecast\"]:\n\n print\
-  \ (\"Error\")\nif \"a\" not in data or not data[\"forecast\"]:\n  print (\"Error\"\
-  )\nif \"a\" not in data or not data[\"forecast\"]:\n   print (\"Error\")\nif \"\
-  a\" not in data or not data[\"forecast\"]:\n    print (\"Error\")\nif \"a\" not\
-  \ in data or not data[\"forecast\"]:\n print (\"Error\")\nif \"a\" not in data or\
-  \ not data[\"forecast\"]:\n print (\"Error\")\nif \"a\" not in data or not data[\"\
-  forecast\"]:\n print (\"Error\")"
+content: "#!/bin/python3\n\nimport json\n# JSON data as a string (the file you passed)\n\
+  energy_data = ${energy_data_json}\n\n# Parse JSON data\ndata = json.loads(energy_data)\n\
+  if \"forecast\" not in data or not data[\"forecast\"]: \nprint(\"Error: No energy\
+  \ data available.\")\nexit(1)\n\n# Initialize variables\nlowest_intensity_allday\
+  \ = float(\"inf\")\nbest_time_allday = None\nlowest_intensity_protected = float(\"\
+  inf\")\nbest_time_protected = None\n# Process the energy data\nfor entry in data[\"\
+  forecast\"]:\n\ttry:\n\t\tdt = entry[\"datetime\"]\n\t\tintensity = entry[\"carbonIntensity\"\
+  ]\n# Consider the whole day (best_time_allday)\n\t\tif intensity < lowest_intensity_allday:\n\
+  \t\tlowest_intensity_allday = intensity\n\t\tbest_time_allday = dt\n# Consider the\
+  \ protected period (18:00 to 07:00)\n\t\thour = int(dt[11:13])\n\t\tif hour >= 18\
+  \ or hour < 7:\n\t\t\tif intensity < lowest_intensity_protected:\n"
 description: null
 exportReleaseLevel: 7.6.3.2
 exportTable: ops_script
@@ -16,4 +19,4 @@ retainSysIds: true
 scriptName: py1
 scriptType: Script
 sysId: 799e60e7e86f4006a48d0da30c9eded5
-version: 7
+version: 8
