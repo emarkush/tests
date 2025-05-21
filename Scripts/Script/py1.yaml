@@ -20,6 +20,30 @@ content: '#!/usr/bin/python3
 
   if "a" not in data or not data["forecast"]:
 
+  print ("Error")
+
+  if "a" not in data or not data["forecast"]:
+
+  print ("Error")
+
+  if "a" not in data or not data["forecast"]:
+
+  print ("Error")
+
+  if "a" not in data or not data["forecast"]:
+
+  print ("Error")
+
+  if "a" not in data or not data["forecast"]:
+
+  print ("Error")
+
+  if "a" not in data or not data["forecast"]:
+
+  print ("Error")
+
+  if "a" not in data or not data["forecast"]:
+
   print ("Error")'
 description: null
 exportReleaseLevel: 7.6.3.2
@@ -31,4 +55,4 @@ retainSysIds: true
 scriptName: py1
 scriptType: Script
 sysId: 799e60e7e86f4006a48d0da30c9eded5
-version: 5
+version: 6
