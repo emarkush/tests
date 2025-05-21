@@ -1,17 +1,5 @@
-content: '#!/usr/bin/python3
-
-
-  import json
-
-
-  a=15
-
-  b=2
-
-  c=a+b
-
-
-  print(f"c")'
+content: "#!/usr/bin/python3\n\nimport json\n\na=15\nb=2\nc=a+b\n\nif c=17:\n print(f\"\
+  c\")"
 description: null
 exportReleaseLevel: 7.6.3.2
 exportTable: ops_script
@@ -22,4 +10,4 @@ retainSysIds: true
 scriptName: py1
 scriptType: Script
 sysId: 799e60e7e86f4006a48d0da30c9eded5
-version: 9
+version: 10
