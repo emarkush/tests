@@ -114,7 +114,7 @@ runAsSudo: false
 runCount: 34
 runTime: 9
 runtimeDir: null
-script: py1
+script: testscr
 simulation: false
 startHeld: false
 startHeldReason: null
@@ -133,6 +133,6 @@ twWorkflowOnly: -- System Default --
 type: taskUnix
 userEstimatedDuration: null
 variables: []
-version: 27
+version: 28
 virtualResources: []
 waitForOutput: true
