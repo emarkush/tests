@@ -1,0 +1,38 @@
+content: "#!/bin/python3\n\nimport json\n# JSON data as a string (the file you passed)\n\
+  energy_data = ${energy_data_json}\n\n# Parse JSON data\ndata = json.loads(energy_data)\n\
+  if \"forecast\" not in data or not data[\"forecast\"]: \nprint(\"Error: No energy\
+  \ data available.\")\n exit(1)\n\n# Initialize variables\nlowest_intensity_allday\
+  \ = float(\"inf\")\nbest_time_allday = None\nlowest_intensity_protected = float(\"\
+  inf\")\nbest_time_protected = None\n# Process the energy data\nfor entry in data[\"\
+  forecast\"]:\n try:\n  dt = entry[\"datetime\"]\n   intensity = entry[\"carbonIntensity\"\
+  ]\n    # Consider the whole day (best_time_allday)\n\tif intensity < lowest_intensity_allday:\n\
+  \t lowest_intensity_allday = intensity\n\t  best_time_allday = dt\n\t   # Consider\
+  \ the protected period (18:00 to 07:00)\n\t    hour = int(dt[11:13])\n\t\tif hour\
+  \ >= 18 or hour < 7:\n\t\t if intensity < lowest_intensity_protected:\n\t\t  lowest_intensity_protected\
+  \ = intensity\n\t\t   best_time_protected = dt\n\t\t    except KeyError:\n\t\t\t\
+  \ print(f\"Error processing entry: {entry}\")\n\t\t\t  continue\n\t\t\t  if best_time_allday\
+  \ is None:\n\t\t\t   print(\"Error: No valid lowest carbon intensity for the whole\
+  \ day found.\")\n\t\t\t    exit(1)\n\t\t\t\tif best_time_protected is None:\n\t\t\
+  \t\t print(\"Error: No valid lowest carbon intensity in the protected period found.\"\
+  )\n\t\t\t\t  exit(1)\n\t\t\t\t  # Extract date components for best_time_allday\n\
+  \t\t\t\t  year_allday = best_time_allday[:4]\n\t\t\t\t  month_allday = best_time_allday[5:7]\n\
+  \t\t\t\t  day_allday = best_time_allday[8:10]\n\t\t\t\t  time_allday = best_time_allday[11:16]\n\
+  \t\t\t\t  # Extract date components for best_time_protected\n\t\t\t\t  year_protected\
+  \ = best_time_protected[:4]\n\t\t\t\t  month_protected = best_time_protected[5:7]\n\
+  \t\t\t\t  day_protected = best_time_protected[8:10]\n\t\t\t\t  time_protected =\
+  \ best_time_protected[11:16]\n\t\t\t\t  # Output in 8 lines:\n\t\t\t\t  # First\
+  \ best_time_allday (year, month, day, time)\n\t\t\t\t  print(year_allday)\n\t\t\t\
+  \t  print(month_allday)\n\t\t\t\t  print(day_allday)\n\t\t\t\t  print(time_allday)\n\
+  \t\t\t\t  # Then best_time_protected (year, month, day, time)\n\t\t\t\t  print(year_protected)\n\
+  \t\t\t\t  print(month_protected)\n\t\t\t\t  print(day_protected)\n\t\t\t\t  print(time_protected)\n"
+description: null
+exportReleaseLevel: 7.6.3.2
+exportTable: ops_script
+notes: []
+opswiseGroups: []
+resolveVariables: false
+retainSysIds: true
+scriptName: pythonscr
+scriptType: Script
+sysId: 696d7afb73544989bad003b1f1af8323
+version: 1
