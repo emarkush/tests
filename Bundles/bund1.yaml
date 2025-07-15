@@ -18,6 +18,10 @@ bundleTasks:
   name: echo
   sysId: 47b43166d1f648268edfb1ed4b9b1221
   type: Linux/Unix
+- addedBy: ops.admin
+  name: wf1sql
+  sysId: d084db56e80a43269570cdb768ff6cc6
+  type: Workflow
 bundleTriggers: []
 bundleUniversalEventTemplates: []
 bundleUniversalTemplates: []

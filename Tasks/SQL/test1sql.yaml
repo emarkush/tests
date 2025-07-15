@@ -10,22 +10,32 @@ actions:
     notifyOnLateStart: false
     notifyOnProjectedLate: false
     status: Success
-    sysId: 72b361dc43ef4920bd83ed42ff86f438
-    variableName: time
-    variableScope: Self
-    variableValue: ${_formatDate('${ops_launch_time}','HH',0,'',-1)}
+    sysId: 1cbcdb2e48d24b4b9886c9ed15f98285
+    variableName: len
+    variableScope: Global
+    variableValue: ${_varLength('outputcity1')}
+  - description: null
+    exitCodes: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    status: Success
+    sysId: abd7811c992f4e2f98fe299f359624ca
+    variableName: outputcity1
+    variableScope: Global
+    variableValue: ${_resultsAll}
   snmpNotifications: []
   systemOperations: []
-agent: localhost.localdomain - AGNT0001
-agentCluster: null
-agentClusterVar: null
-agentVar: null
-avgRunTime: 0
-avgRunTimeDisplay: 0 Seconds
-broadcastCluster: null
-broadcastClusterVar: null
-command: echo "HI"
-commandOrScript: Command
+autoCleanup: false
+avgRunTime: 10
+avgRunTimeDisplay: 10 Seconds
+columnName: null
+columnOp: '='
+columnValue: null
+connection: sqlconnworld
+connectionVar: null
 cpDuration: null
 cpDurationUnit: Minutes
 credentials: null
@@ -47,17 +57,13 @@ efOffsetType: Percentage
 efTime: 00:00
 efType: Time
 enforceVariables: false
-environment: []
 exclusiveTasks: []
 exclusiveWithSelf: false
 executionRestriction: None
-exitCodeOutput: null
-exitCodeProcessing: Success Exitcode Range
-exitCodeText: null
 exitCodes: '0'
 exportReleaseLevel: 7.6.3.2
-exportTable: ops_task_unix
-firstRun: 2025-01-17 08:01:03 -0500
+exportTable: ops_task_sql
+firstRun: 2025-01-21 05:35:47 -0500
 holdResources: false
 lastRun: 2025-07-14 09:30:37 -0400
 lastRunTime: 0
@@ -80,22 +86,15 @@ lsEnabled: false
 lsNthAmount: 5
 lsTime: 00:00
 lsType: Time
-maxRunTime: 1
-maxRunTimeDisplay: 1 Seconds
+maxRows: null
+maxRunTime: 61
+maxRunTimeDisplay: 1 Minute 1 Seconds
 minRunTime: 0
 minRunTimeDisplay: 0 Seconds
-name: echo
+name: test1sql
 notes: []
 opswiseGroups: []
-outputFailureOnly: false
-outputReturnFile: null
-outputReturnNline: '100'
-outputReturnSline: '1'
-outputReturnText: null
-outputReturnType: OUTERR
-outputType: STDOUT
 overrideInstanceWait: 'No'
-parameters: null
 resPriority: 10
 resolveNameImmediately: false
 restrictionPeriod: None
@@ -104,22 +103,22 @@ restrictionPeriodAfterTime: null
 restrictionPeriodBeforeDate: null
 restrictionPeriodBeforeTime: null
 restrictionPeriodDateList: []
+resultProcessing: Skip Result Processing
 retainSysIds: true
-retryExitCodes: null
 retryIndefinitely: false
 retryInterval: 60
 retryMaximum: 0
 retrySuppressFailure: false
-runAsSudo: false
-runCount: 62
-runTime: 11
-runtimeDir: null
-script: null
+runCount: 61
+runTime: 611
 simulation: false
+sqlCommand: SELECT ops_history.`exec_id`, TA_EXEC.`name`, COUNT(0) AS COUNT0, SUM(ops_history.`task_ref_count`)
+  FROM (ops_history LEFT JOIN ops_exec AS TA_EXEC ON ops_history.`exec_id` = TA_EXEC.`sys_id`)
+  GROUP BY ops_history.`exec_id`, TA_EXEC.`name` ORDER BY TA_EXEC.`name`
 startHeld: false
 startHeldReason: null
 summary: null
-sysId: 0be21fd34e12445991c0baf919009766
+sysId: 5ff4c45b6e77429282f286a47b86eb3e
 timeZonePref: -- System Default --
 twDelayAmount: null
 twDelayDuration: 00:00:00:00
@@ -130,9 +129,22 @@ twWaitDuration: 00:00:00:00
 twWaitTime: 00:00
 twWaitType: None
 twWorkflowOnly: -- System Default --
-type: taskUnix
+type: taskSql
 userEstimatedDuration: null
-variables: []
-version: 43
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: alfa
+  options: []
+  sysId: df2393e63e0844dda42db24c35a48eca
+  value: '6'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: omega
+  options: []
+  sysId: 01f38236acfa499e8f3a5df21c096493
+  value: '8'
+version: 36
 virtualResources: []
-waitForOutput: true

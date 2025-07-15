@@ -10,26 +10,16 @@ actions:
     notifyOnLateStart: false
     notifyOnProjectedLate: false
     status: Success
-    sysId: 72b361dc43ef4920bd83ed42ff86f438
-    variableName: time
+    sysId: ed98f9ed8ab84e4fbcc0f1e2978a7c2a
+    variableName: time1
     variableScope: Self
     variableValue: ${_formatDate('${ops_launch_time}','HH',0,'',-1)}
   snmpNotifications: []
   systemOperations: []
-agent: localhost.localdomain - AGNT0001
-agentCluster: null
-agentClusterVar: null
-agentVar: null
 avgRunTime: 0
 avgRunTimeDisplay: 0 Seconds
-broadcastCluster: null
-broadcastClusterVar: null
-command: echo "HI"
-commandOrScript: Command
 cpDuration: null
 cpDurationUnit: Minutes
-credentials: null
-credentialsVar: null
 customField1:
   label: null
   value: null
@@ -47,19 +37,14 @@ efOffsetType: Percentage
 efTime: 00:00
 efType: Time
 enforceVariables: false
-environment: []
 exclusiveTasks: []
 exclusiveWithSelf: false
 executionRestriction: None
-exitCodeOutput: null
-exitCodeProcessing: Success Exitcode Range
-exitCodeText: null
-exitCodes: '0'
 exportReleaseLevel: 7.6.3.2
-exportTable: ops_task_unix
-firstRun: 2025-01-17 08:01:03 -0500
+exportTable: ops_task_sleep
+firstRun: 2025-01-22 06:57:13 -0500
 holdResources: false
-lastRun: 2025-07-14 09:30:37 -0400
+lastRun: 2025-02-07 09:22:15 -0500
 lastRunTime: 0
 lastRunTimeDisplay: 0 Seconds
 lfDayConstraint: None
@@ -80,22 +65,14 @@ lsEnabled: false
 lsNthAmount: 5
 lsTime: 00:00
 lsType: Time
-maxRunTime: 1
-maxRunTimeDisplay: 1 Seconds
+maxRunTime: 0
+maxRunTimeDisplay: 0 Seconds
 minRunTime: 0
 minRunTimeDisplay: 0 Seconds
-name: echo
+name: Sleep 0
 notes: []
 opswiseGroups: []
-outputFailureOnly: false
-outputReturnFile: null
-outputReturnNline: '100'
-outputReturnSline: '1'
-outputReturnText: null
-outputReturnType: OUTERR
-outputType: STDOUT
 overrideInstanceWait: 'No'
-parameters: null
 resPriority: 10
 resolveNameImmediately: false
 restrictionPeriod: None
@@ -105,34 +82,21 @@ restrictionPeriodBeforeDate: null
 restrictionPeriodBeforeTime: null
 restrictionPeriodDateList: []
 retainSysIds: true
-retryExitCodes: null
-retryIndefinitely: false
-retryInterval: 60
-retryMaximum: 0
-retrySuppressFailure: false
-runAsSudo: false
-runCount: 62
-runTime: 11
-runtimeDir: null
-script: null
-simulation: false
+runCount: 4
+runTime: 0
+simulation: true
+sleepAmount: '1'
+sleepDayConstraint: None
+sleepDuration: 00:00:00:00
+sleepTime: 00:00
+sleepType: Seconds
 startHeld: false
 startHeldReason: null
-summary: null
-sysId: 0be21fd34e12445991c0baf919009766
+summary: Sleep for 0 seconds.
+sysId: 410d6c0bc0a801c901838d8ac43b3279
 timeZonePref: -- System Default --
-twDelayAmount: null
-twDelayDuration: 00:00:00:00
-twDelayType: None
-twWaitAmount: null
-twWaitDayConstraint: None
-twWaitDuration: 00:00:00:00
-twWaitTime: 00:00
-twWaitType: None
-twWorkflowOnly: -- System Default --
-type: taskUnix
+type: taskSleep
 userEstimatedDuration: null
 variables: []
-version: 43
+version: 5
 virtualResources: []
-waitForOutput: true

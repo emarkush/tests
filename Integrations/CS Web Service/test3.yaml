@@ -1,0 +1,252 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions:
+  - description: null
+    exitCodes: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    status: Success
+    sysId: da8dd81f00064e17aba24f44921085bc
+    variableName: name
+    variableScope: Parent
+    variableValue: ${_outputXPath('STDOUT', '//taskInstances/taskInstance/name')}
+  snmpNotifications: []
+  systemOperations: []
+agent: localhost.localdomain - AGNT0001
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+arrayField1:
+  fields: []
+  label: URL Query Parameters
+  name: url_query_parameters
+arrayField2:
+  fields: []
+  label: HTTP Headers
+  name: http_headers
+arrayField3:
+  fields: []
+  label: Form Data
+  name: payload_form_data
+arrayField4:
+  fields: []
+  label: Response Exit Code Mapping
+  name: response_exit_code_mapping
+  nameTitle: Match Pattern
+  valueTitle: Exit Code
+autoCleanup: false
+avgRunTime: 6
+avgRunTimeDisplay: 6 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Protocol
+  name: protocol
+  value: rest
+choiceField10:
+  label: SOAP Version
+  name: soap_version
+  value: '1.2'
+choiceField11:
+  label: SOAP Payload Type
+  name: soap_payload_type
+  value: Body
+choiceField2:
+  label: HTTP Authentication
+  name: http_authentication
+  value: basic
+choiceField3:
+  label: Loglevel
+  name: loglevel
+  value: DEBUG
+choiceField4:
+  label: HTTP Method
+  name: http_method
+  value: post
+choiceField5:
+  label: HTTP Payload Type
+  name: http_payload_type
+  value: Raw
+choiceField6:
+  label: MIME Type
+  name: mime_type
+  value: application/json
+choiceField7:
+  label: Payload Source
+  name: payload_source
+  value: Form
+choiceField8:
+  label: Response Processing
+  name: response_processing
+  value: Print HTTP Response Body to STDOUT
+choiceField9:
+  label: Output Type
+  name: output_type
+  value: XML
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: Credentials
+  name: credentials
+  value: admin
+credentials: null
+credentialsVar: null
+customField1:
+  label: null
+  value: null
+customField2:
+  label: null
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.6.3.2
+exportTable: ops_task_universal
+firstRun: 2025-03-21 05:57:20 -0400
+holdResources: false
+largeTextField1:
+  label: Payload
+  name: payload
+  value: " {\n      \"name\": \"${nameTask}\",\n      \"late\": false\n } "
+largeTextField2:
+  label: File(s)
+  name: files
+  value: null
+lastRun: 2025-07-14 09:30:39 -0400
+lastRunTime: 1
+lastRunTimeDisplay: 1 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 36
+maxRunTimeDisplay: 36 Seconds
+minRunTime: 1
+minRunTimeDisplay: 1 Seconds
+name: test3
+notes: []
+opswiseGroups: []
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 13
+runTime: 72
+runtimeDir: null
+scriptField1:
+  label: Payload Script
+  name: payload_script
+  value: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: null
+sysId: a82069b289ca40a29afd3a4e67235b87
+template: CS Web Service
+textField1:
+  label: Timeout
+  name: timeout
+  value: null
+textField11:
+  label: Path Expression
+  name: path_expression
+  value: null
+textField2:
+  label: URL
+  name: url
+  value: http://localhost:8080/uc/resources/taskinstance/list
+textField3:
+  label: Response Output File
+  name: output_file
+  value: null
+textField4:
+  label: Proxies
+  name: proxies
+  value: null
+textField5:
+  label: SOAP Action
+  name: soap_action
+  value: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: outvar1
+  options: []
+  sysId: 7803b1a9ab6a4b5e861847000af98317
+  value: ${_outputFromTask('pythrun','STDOUT')}
+version: 10
+virtualResources: []
+waitForOutput: false

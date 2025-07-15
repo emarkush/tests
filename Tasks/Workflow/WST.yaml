@@ -1,35 +1,16 @@
 actions:
   abortActions: []
   emailNotifications: []
-  setVariableActions:
-  - description: null
-    exitCodes: null
-    notificationOption: Operation Failure
-    notifyOnEarlyFinish: false
-    notifyOnLateFinish: false
-    notifyOnLateStart: false
-    notifyOnProjectedLate: false
-    status: Success
-    sysId: 72b361dc43ef4920bd83ed42ff86f438
-    variableName: time
-    variableScope: Self
-    variableValue: ${_formatDate('${ops_launch_time}','HH',0,'',-1)}
+  setVariableActions: []
   snmpNotifications: []
   systemOperations: []
-agent: localhost.localdomain - AGNT0001
-agentCluster: null
-agentClusterVar: null
-agentVar: null
-avgRunTime: 0
-avgRunTimeDisplay: 0 Seconds
-broadcastCluster: null
-broadcastClusterVar: null
-command: echo "HI"
-commandOrScript: Command
+avgRunTime: 7076
+avgRunTimeDisplay: 1 Hour 57 Minutes 56 Seconds
+calculateCp: false
+calendar: null
 cpDuration: null
 cpDurationUnit: Minutes
-credentials: null
-credentialsVar: null
+criticalEndpoints: []
 customField1:
   label: null
   value: null
@@ -47,21 +28,18 @@ efOffsetType: Percentage
 efTime: 00:00
 efType: Time
 enforceVariables: false
-environment: []
 exclusiveTasks: []
 exclusiveWithSelf: false
 executionRestriction: None
-exitCodeOutput: null
-exitCodeProcessing: Success Exitcode Range
-exitCodeText: null
-exitCodes: '0'
 exportReleaseLevel: 7.6.3.2
-exportTable: ops_task_unix
-firstRun: 2025-01-17 08:01:03 -0500
+exportTable: ops_task_workflow
+firstRun: 2025-03-21 05:57:21 -0400
 holdResources: false
-lastRun: 2025-07-14 09:30:37 -0400
-lastRunTime: 0
-lastRunTimeDisplay: 0 Seconds
+instanceWait: -- None --
+lastRun: 2025-07-15 04:37:14 -0400
+lastRunTime: 68797
+lastRunTimeDisplay: 19 Hours 6 Minutes 37 Seconds
+layoutOption: -- None --
 lfDayConstraint: None
 lfDuration: 00:00:00:00
 lfEnabled: false
@@ -80,22 +58,16 @@ lsEnabled: false
 lsNthAmount: 5
 lsTime: 00:00
 lsType: Time
-maxRunTime: 1
-maxRunTimeDisplay: 1 Seconds
-minRunTime: 0
-minRunTimeDisplay: 0 Seconds
-name: echo
+maxRunTime: 68797
+maxRunTimeDisplay: 19 Hours 6 Minutes 37 Seconds
+minRunTime: 4
+minRunTimeDisplay: 4 Seconds
+name: WST
 notes: []
+numberOfTasks: 3
 opswiseGroups: []
-outputFailureOnly: false
-outputReturnFile: null
-outputReturnNline: '100'
-outputReturnSline: '1'
-outputReturnText: null
-outputReturnType: OUTERR
-outputType: STDOUT
+overrideCalendar: false
 overrideInstanceWait: 'No'
-parameters: null
 resPriority: 10
 resolveNameImmediately: false
 restrictionPeriod: None
@@ -105,21 +77,17 @@ restrictionPeriodBeforeDate: null
 restrictionPeriodBeforeTime: null
 restrictionPeriodDateList: []
 retainSysIds: true
-retryExitCodes: null
-retryIndefinitely: false
-retryInterval: 60
-retryMaximum: 0
-retrySuppressFailure: false
-runAsSudo: false
-runCount: 62
-runTime: 11
-runtimeDir: null
-script: null
+runCount: 10
+runCriteria: []
+runTime: 70759
 simulation: false
+skippedOption: Show Skipped
 startHeld: false
 startHeldReason: null
+stepActions: []
+stepConditions: []
 summary: null
-sysId: 0be21fd34e12445991c0baf919009766
+sysId: 1e6d0457f6e64361b43c506a0e6467a8
 timeZonePref: -- System Default --
 twDelayAmount: null
 twDelayDuration: 00:00:00:00
@@ -130,9 +98,37 @@ twWaitDuration: 00:00:00:00
 twWaitTime: 00:00
 twWaitType: None
 twWorkflowOnly: -- System Default --
-type: taskUnix
+type: taskWorkflow
 userEstimatedDuration: null
 variables: []
-version: 43
+version: 4
 virtualResources: []
-waitForOutput: true
+workflowEdges:
+- condition:
+    value: Success
+  sourceId:
+    taskName: Sleep 0
+    value: '4'
+  straightEdge: true
+  targetId:
+    taskName: test3
+    value: '5'
+workflowVertices:
+- alias: null
+  task:
+    value: Sleep 0
+  vertexId: '4'
+  vertexX: '780'
+  vertexY: '150'
+- alias: null
+  task:
+    value: test3
+  vertexId: '5'
+  vertexX: '800'
+  vertexY: '530'
+- alias: null
+  task:
+    value: pythrun
+  vertexId: '8'
+  vertexX: '610'
+  vertexY: '150'

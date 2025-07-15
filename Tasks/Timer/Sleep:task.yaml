@@ -1,0 +1,101 @@
+actions:
+  abortActions:
+  - cancelProcess: true
+    description: null
+    exitCodes: null
+    haltOnFinish: false
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: true
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    overrideExitCode: null
+    status: ''
+    sysId: 817817cb6a954af49947610343f74897
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+avgRunTime: 50
+avgRunTimeDisplay: 50 Seconds
+cpDuration: null
+cpDurationUnit: Minutes
+customField1:
+  label: null
+  value: null
+customField2:
+  label: null
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.6.3.2
+exportTable: ops_task_sleep
+firstRun: 2025-03-03 07:19:58 -0500
+holdResources: false
+lastRun: 2025-07-14 09:29:46 -0400
+lastRunTime: 50
+lastRunTimeDisplay: 50 Seconds
+lfDayConstraint: Same Day
+lfDuration: 00:00:00:00
+lfEnabled: true
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: '10:55'
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 50
+maxRunTimeDisplay: 50 Seconds
+minRunTime: 50
+minRunTimeDisplay: 50 Seconds
+name: Sleep:task
+notes: []
+opswiseGroups: []
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 10
+runTime: 500
+simulation: false
+sleepAmount: '50'
+sleepDayConstraint: None
+sleepDuration: 00:00:00:00
+sleepTime: 00:00
+sleepType: Seconds
+startHeld: false
+startHeldReason: null
+summary: Sleep for 30 seconds.
+sysId: 20f651af3afa4766a7717f523ac69836
+timeZonePref: -- System Default --
+type: taskSleep
+userEstimatedDuration: 00:00:00:00
+variables: []
+version: 1
+virtualResources: []

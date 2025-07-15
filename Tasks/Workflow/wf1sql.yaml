@@ -1,0 +1,173 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+avgRunTime: 11531
+avgRunTimeDisplay: 3 Hours 12 Minutes 11 Seconds
+calculateCp: false
+calendar: null
+cpDuration: null
+cpDurationUnit: Minutes
+criticalEndpoints: []
+customField1:
+  label: null
+  value: null
+customField2:
+  label: null
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.6.3.2
+exportTable: ops_task_workflow
+firstRun: 2025-01-22 06:58:16 -0500
+holdResources: false
+instanceWait: -- None --
+lastRun: 2025-07-15 04:37:14 -0400
+lastRunTime: 68898
+lastRunTimeDisplay: 19 Hours 8 Minutes 18 Seconds
+layoutOption: -- None --
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 68898
+maxRunTimeDisplay: 19 Hours 8 Minutes 18 Seconds
+minRunTime: 2
+minRunTimeDisplay: 2 Seconds
+name: wf1sql
+notes: []
+numberOfTasks: 5
+opswiseGroups: []
+overrideCalendar: false
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 6
+runCriteria: []
+runTime: 69184
+simulation: false
+skippedOption: Show Skipped
+startHeld: false
+startHeldReason: null
+stepActions: []
+stepConditions: []
+summary: null
+sysId: 7ebf55d580f24463b46424743ba6589c
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskWorkflow
+userEstimatedDuration: null
+variables: []
+version: 6
+virtualResources: []
+workflowEdges:
+- condition:
+    value: Success
+  sourceId:
+    taskName: test1sql
+    value: '4'
+  straightEdge: true
+  targetId:
+    taskName: echo
+    value: '5'
+- condition:
+    value: Success
+  sourceId:
+    taskName: Sleep 30
+    value: '7'
+  straightEdge: true
+  targetId:
+    taskName: test1sql
+    value: '4'
+- condition:
+    value: Success
+  sourceId:
+    taskName: Sleep:task
+    value: '9'
+  straightEdge: true
+  targetId:
+    taskName: Sleep 30
+    value: '7'
+- condition:
+    value: Success
+  sourceId:
+    taskName: echo
+    value: '5'
+  straightEdge: true
+  targetId:
+    taskName: WST
+    value: '11'
+workflowVertices:
+- alias: null
+  task:
+    value: test1sql
+  vertexId: '4'
+  vertexX: '620'
+  vertexY: '250'
+- alias: null
+  task:
+    value: echo
+  vertexId: '5'
+  vertexX: '700'
+  vertexY: '420'
+- alias: null
+  task:
+    value: Sleep 30
+  vertexId: '7'
+  vertexX: '760'
+  vertexY: '170'
+- alias: null
+  task:
+    value: Sleep:task
+  vertexId: '9'
+  vertexX: '550'
+  vertexY: '70'
+- alias: null
+  task:
+    value: WST
+  vertexId: '11'
+  vertexX: '930'
+  vertexY: '370'
